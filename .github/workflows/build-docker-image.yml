@@ -38,6 +38,6 @@ jobs:
           # 保持多平台构建，这对 ARM 架构的小鸡非常友好
           platforms: linux/amd64,linux/arm64
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/AIGAME:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/aigame:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
